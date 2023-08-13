@@ -485,6 +485,7 @@
 }
 
 .plans {
+
   &__background-img {
     display: none;
   }
@@ -575,13 +576,10 @@
   // slider
 
   &__items {
-    max-width: 362px;
+    max-width: 382px; 
     margin: 0 auto;
   }
-  &__item{
-    margin: 0 10px;
-    margin-bottom: 10px;
-  }
+
 
   .plans__items .slick-slide[data-slick-index="4"] {
     display: none;

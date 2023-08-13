@@ -575,8 +575,12 @@
   // slider
 
   &__items {
-    max-width: 352px;
+    max-width: 362px;
     margin: 0 auto;
+  }
+  &__item{
+    margin: 0 10px;
+    margin-bottom: 10px;
   }
 
   .plans__items .slick-slide[data-slick-index="4"] {
@@ -1730,6 +1734,7 @@
     }
 
     &__items {
+      
       flex-wrap: nowrap;
       border: 1px solid #587CAE;
       padding: 24px;
@@ -1747,6 +1752,7 @@
     }
 
     &__item {
+      margin: 0;
       border-radius: 0;
       padding: 0;
       max-width: 100%;

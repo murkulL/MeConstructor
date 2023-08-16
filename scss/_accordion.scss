@@ -50,7 +50,7 @@ button.accordion-button {
   }
 }
 button.accordion-button.collapsed {
-  gap: 41.8px !important;
+  gap: 41.8px;
 }
 
 .accordion-body {
@@ -62,5 +62,5 @@ button.accordion-button.collapsed {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #4a5360 !important;
+  color: #4a5360;
 }

@@ -3,18 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="./images/favicon/favicon-16x16.png">
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="./images/favicon/favicon-32x32.png"> -->
+
+  <link rel="icon" sizes="32x32" href="./images/favicon/favicon.ico">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style/style.css">
-  <title>ME PAGE</title>
+  
+  <title>Me Constructor</title>
 </head>
 
 <body>
   <div class="wrapper">
+
     <header class="header">
+
       <div class="container">
         <nav class="header__nav">
           <svg class="header__logo" height="40" width="186">
@@ -56,11 +67,11 @@
             </div>
             <img class="flexible__cursor-img cursor-img-mobile" src="./images/mobile-cursore.png" alt="img-cursor">
             <img class="flexible__cursor-img cursor-img-desctop" src="./images/imgCursor.png" alt="img-cursor">
-            <img class="flexible__background-img" width="1029" height="783" src="./svg/arrow-dashed.svg"
+            <img class="flexible__background-img" width="1029" height="783" src="./flex-dashed.png"
               alt="background-img">
             <img class="flexible__window" width="862" height="591" src="./images/imgWindow.png" alt="window-img">
-            <img class="flexible__flex-img" width="372" height="62" src="./images/imgFlex.png" alt="imgFlex">
-            <img class="flexible__menu-img" width="172" height="43" src="./images/imgMenu.png" alt="imgMenu">
+            <img class="flexible__flex-img" width="372" height="62" src="./images/flex-padding.png" alt="imgFlex">
+            <img class="flexible__menu-img" width="172" height="43" src="./images/flex-menu.png" alt="imgMenu">
             <img class="flexible__padding-img" width="374" height="242" src="./images/imgPadding.png" alt="imgPadding">
           </div>
         </div>
@@ -69,7 +80,7 @@
       <section class="competitors mobile-container">
         <div class="container">
           <div class="competitors__inner">
-            <img class="competitors__background" src="../app/svg/arrow-dashed2.svg" alt="arrow dashed">
+            <img class="competitors__background" src="../svg/arrow-dashed2.svg" alt="arrow dashed">
             <span class="competitors__intro">competitors</span>
             <h2 class="competitors__title">Why ME Page?</h2>
             <div class="competitors__box-cards">
@@ -197,7 +208,7 @@
           <ul class="features__items">
             <li class="features__item">
               <div class="features__box-img">
-                <img class="features__img" width="601" height="474" src="./images/post-1.png" alt="featuresImg">
+                <img class="features__img" width="601" height="474" src="./images/post-1.png" alt="featuresImg" loading="lazy">
               </div>
               <div class="features__box-text">
                 <h3 class="features__post-title">Empowering Customization</h3>
@@ -220,12 +231,12 @@
                   adding new ones, or deleting existing ones.</p>
               </div>
               <div class="features__box-img">
-                <img class="features__img" width="601" height="474" src="./images/post-2.png" alt="featuresImg">
+                <img class="features__img" width="601" height="474" src="./images/post-2.png" alt="featuresImg" loading="lazy">
               </div>
             </li>
             <li class="features__item">
               <div class="features__box-img">
-                <img class="features__img" width="601" height="474" src="./images/post-3.png" alt="featuresImg">
+                <img class="features__img" width="601" height="474" src="./images/post-3.png" alt="featuresImg" loading="lazy">
               </div>
               <div class="features__box-text">
                 <h3 class="features__post-title">Build On-the-Go:<br>Use on Mobile Device</h3>
@@ -247,7 +258,7 @@
                 </p>
               </div>
               <div class="features__box-img">
-                <img class="features__img" width="601" height="474" src="./images/post-4.png" alt="featuresImg">
+                <img class="features__img" width="601" height="474" src="./images/post-4.png" alt="featuresImg" loading="lazy">
               </div>
             </li>
           </ul>
@@ -268,7 +279,8 @@
               <option value="currency_2">UK</option>
             </select>
             <div class="plans__box-content">
-              <div class="plans__items slider2">
+              <div class="plans__items">
+
                 <div class="plans__item hidden">
                   <div class="plans__list-items">
                     <div class="plans__list-item addit-style">
@@ -284,161 +296,175 @@
                     <div class="plans__list-item">No Advertising</div>
                   </div>
                 </div>
-                <div class="plans__item">
-                  <div class="plans__list-items">
 
-                    <div class="plans__list-item">
-                      <div class="plans__box-rate">
-                        <b class="plans__rate">Free</b>
+                <div id="plansCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true"
+                  data-bs-interval="4000">
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="plans__item">
+                        <div class="plans__list-items">
+                          <div class="plans__list-item">
+                            <div class="plans__box-rate">
+                              <b class="plans__rate">Free</b>
+                            </div>
+                            <div class="plans__box-price padding-bottom">
+                              <span class="plans__total">$0</span>
+                              <p class="plans__price color-gray price-padding">/ month</p>
+                            </div>
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Created web Pages</p>100 Pages
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Created Projects</p>5 Projects
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Share Projects / Pages</p>10 Projects
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Ready-made Blocks</p>20 Blocks
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Templates</p>100 Templates
+                          </div>
+                          <div class="plans__list-item height-item-plans flex">
+                            <p class="plans__list-text">Advanced Mode</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#x-white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item height-item-plans flex">
+                            <p class="plans__list-text">Personal Support Manager</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#blue-white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item flex">
+                            <p class="plans__list-text">No Advertising</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#x-white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item"><button class="plans-button">Get</button></div>
+                        </div>
                       </div>
-                      <div class="plans__box-price padding-bottom">
-                        <span class="plans__total">$0</span>
-                        <p class="plans__price color-gray price-padding">/ month</p>
+                    </div>
+
+
+                    <div class="carousel-item">
+                      <div class="plans__item">
+                        <div class="plans__list-items">
+
+                          <div class="plans__list-item padding">
+                            <div class="plans__box-rate"><b class="plans__rate">Monthly</b>
+                              <img class="plans__rete-img" src="./images/popular.png" alt="img rete">
+                            </div>
+
+                            <div class="plans__box-price">
+                              <span class="plans__total">$15</span>
+                              <p class="plans__price color-gray price-padding">/ month</p>
+                            </div>
+                            <p class="color-gray">Billed Yearly</p>
+                          </div>
+
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Created web Pages</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Created Projects</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Share Projects / Pages</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Ready-made Blocks</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans bold flex">
+                            <p class="plans__list-text">Templates</p>500+
+                          </div>
+                          <div class="plans__list-item height-item-plans flex">
+                            <p class="plans__list-text">Advanced Mode</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#blue-white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item height-item-plans flex">
+                            <p class="plans__list-text">Personal Support Manager</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#blue-white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item flex">
+                            <p class="plans__list-text">No Advertising</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#blue-white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item"><button class="plans-button">Get</button></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Created web Pages</p>100 Pages
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Created Projects</p>5 Projects
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Share Projects / Pages</p>10 Projects
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Ready-made Blocks</p>20 Blocks
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Templates</p>100 Templates
-                    </div>
-                    <div class="plans__list-item height-item-plans flex">
-                      <p class="plans__list-text">Advanced Mode</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#x-white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item height-item-plans flex">
-                      <p class="plans__list-text">Personal Support Manager</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#blue-white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item flex">
-                      <p class="plans__list-text">No Advertising</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#x-white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item"><button class="plans-button">Get</button></div>
 
-                  </div>
-                </div>
-                <div class="plans__item">
-                  <div class="plans__list-items">
+                    <div class="carousel-item">
+                      <div class="plans__item background">
+                        <div class="plans__list-items">
+                          <div class="plans__list-item padding">
+                            <div class="plans__box-rate">
+                              <b class="plans__rate color">Annually</b>
+                              <img class="plans__rete-img" src="./images/optimal.png" alt="img rete">
+                            </div>
+                            <div class="plans__box-price">
+                              <span class="plans__total color">$10</span>
+                              <p class="plans__price color price-padding">/ month</p>
+                            </div>
+                            <p class="color">Billed Yearly</p>
+                          </div>
 
-                    <div class="plans__list-item padding">
-                      <div class="plans__box-rate"><b class="plans__rate">Monthly</b>
-                        <img class="plans__rete-img" src="./images/popular.png" alt="img rete">
+                          <div class="plans__list-item height-item-plans color bold flex">
+                            <p class="plans__list-text">Created web Pages</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans color bold flex">
+                            <p class="plans__list-text">Created Projects</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans color bold flex">
+                            <p class="plans__list-text">Share Projects / Pages</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans color bold flex">
+                            <p class="plans__list-text">Ready-made Blocks</p>Unlimited
+                          </div>
+                          <div class="plans__list-item height-item-plans color bold flex">
+                            <p class="plans__list-text">Templates</p>500+
+                          </div>
+                          <div class="plans__list-item height-item-plans flex">
+                            <p class="plans__list-text">Advanced Mode</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item height-item-plans flex">
+                            <p class="plans__list-text">Personal Support Manager</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item flex">
+                            <p class="plans__list-text">No Advertising</p>
+                            <svg>
+                              <use xlink:href="./sprite/sprite.svg#white-check" />
+                            </svg>
+                          </div>
+                          <div class="plans__list-item"><button class="plans-button">Get</button></div>
+                        </div>
                       </div>
-
-                      <div class="plans__box-price">
-                        <span class="plans__total">$15</span>
-                        <p class="plans__price color-gray price-padding">/ month</p>
-                      </div>
-                      <p class="color-gray">Billed Yearly</p>
                     </div>
-
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Created web Pages</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Created Projects</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Share Projects / Pages</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Ready-made Blocks</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans bold flex">
-                      <p class="plans__list-text">Templates</p>500+
-                    </div>
-                    <div class="plans__list-item height-item-plans flex">
-                      <p class="plans__list-text">Advanced Mode</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#blue-white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item height-item-plans flex">
-                      <p class="plans__list-text">Personal Support Manager</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#blue-white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item flex">
-                      <p class="plans__list-text">No Advertising</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#blue-white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item"><button class="plans-button">Get</button></div>
-
-                  </div>
-                </div>
-                <div class="plans__item">
-                  <div class="plans__list-items background">
-                    <div class="plans__list-item padding">
-                      <div class="plans__box-rate">
-                        <b class="plans__rate color">Annualy</b>
-                        <img class="plans__rete-img" src="./images/optimal.png" alt="img rete">
-                      </div>
-                      <div class="plans__box-price">
-                        <span class="plans__total color">$10</span>
-                        <p class="plans__price color price-padding">/ month</p>
-                      </div>
-                      <p class="color">Billed Yearly</p>
-                    </div>
-
-                    <div class="plans__list-item height-item-plans color bold flex">
-                      <p class="plans__list-text">Created web Pages</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans color bold flex">
-                      <p class="plans__list-text">Created Projects</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans color bold flex">
-                      <p class="plans__list-text">Share Projects / Pages</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans color bold flex">
-                      <p class="plans__list-text">Ready-made Blocks</p>Unlimited
-                    </div>
-                    <div class="plans__list-item height-item-plans color bold flex">
-                      <p class="plans__list-text">Templates</p>500+
-                    </div>
-                    <div class="plans__list-item height-item-plans flex">
-                      <p class="plans__list-text">Advanced Mode</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item height-item-plans flex">
-                      <p class="plans__list-text">Personal Support Manager</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item flex">
-                      <p class="plans__list-text">No Advertising</p>
-                      <svg>
-                        <use xlink:href="./sprite/sprite.svg#white-check" />
-                      </svg>
-                    </div>
-                    <div class="plans__list-item"><button class="plans-button">Get</button></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </section>
 
       <section class="achieve">
@@ -577,28 +603,13 @@
         </div>
       </section>
 
-      <section class="templates">
-        <div class="container">
-          <span class="templates__intro">Templates</span>
-          <h2 class="templates__title">Don't Waste Your Time! Choose From 100+ Templates</h2>
-          <figure class="templates__collection">
-            <img class="templates__img" src="./images/images-1.2.jpg" alt="figure-img">
-            <img class="templates__img" src="./images/images-1.1.jpg" alt="figure-img">
-            <img class="templates__img" src="./images/images-1.2.jpg" alt="figure-img">
-            <img class="templates__img" src="./images/images-1.1.jpg" alt="figure-img">
-            <img class="templates__img" src="./images/images-1.2.jpg" alt="figure-img">
-            <img class="templates__img" src="./images/images-1.1.jpg" alt="figure-img">
-          </figure>
-        </div>
-        <a class="templates__link" href="#">View All Templates</a>
-      </section>
-
       <section class="articles">
         <div class="container">
           <span class="articles__intro">Articles</span>
           <h2 class="articles__title">Latest News From ME-Page Team</h2>
-          <div class="articles__items">
-            <div class="articles__item">
+          <div class="articles__items owl-carousel owl-theme">
+
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-3.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -611,7 +622,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-2.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -624,7 +635,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-1.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -637,7 +648,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-2.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -650,7 +661,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-3.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -662,7 +673,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-2.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -675,7 +686,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-1.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -688,7 +699,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-2.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -701,7 +712,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-3.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -713,7 +724,7 @@
               </div>
             </div>
 
-            <div class="articles__item">
+            <div class="articles__item item">
               <img class="articles__img" src="./images/girl-img-2.jpg" alt="articles-img">
               <div class="articles__content-box">
                 <b class="articles__tips">Tips, Constructor<time class="articles__date" datetime="2023-03-10"> - March
@@ -727,7 +738,6 @@
 
           </div>
         </div>
-
       </section>
 
       <section class="ready">
@@ -739,7 +749,7 @@
           <div class="ready__box-title">
             <h2 class="ready__title">Ready to Try</h2>
             <svg class="ready__title-svg">
-              <use xlink:href="./sprite/sprite.svg#logo-title" width="187" height="60" />
+              <use xlink:href="./sprite/sprite.svg#mobil-white-title" />
             </svg>
             <span class="ready__countinue-title">?</span>
           </div>
@@ -844,20 +854,20 @@
             </ul>
           </li>
         </ul>
-
       </div>
     </footer>
   </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+  <!-- <script type="text/javascript" src="./slick/slick/slick.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="./js/main.js"></script>
+
 </body>
 
 </html>
